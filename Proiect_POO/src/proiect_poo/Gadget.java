@@ -20,7 +20,7 @@ public void AfisareStoc(){
         stare=null;
         garantie=null;
         pret=0.0f;
-        stoc=2;
+        stoc=0;
         
     }
     public Gadget(String brand,String culoare,String stare,String garantie, float pret, int stoc) {
