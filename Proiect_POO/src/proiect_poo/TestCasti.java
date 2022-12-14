@@ -15,7 +15,7 @@ public class TestCasti {
         // prin apel constructor cu parametrii
 
         Casti castileMele = new Casti("Samsung", "negru", "nou", 2, 299.99f,
-                12, "Office", "Bluethoot", true, 10);
+                12, "Office", "Bluetooth", true, 10);
         castileMele.AfisarePret();
         castileMele.AfisareStoc();
 
