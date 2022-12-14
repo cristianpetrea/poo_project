@@ -11,16 +11,26 @@ public class TestProiect1 {
         gadegtMeu.AfisarePret();
         gadegtMeu.AfisareStoc();
 
+        // initierea unui obiect de tip Casti
+        // prin apel constructor cu parametrii
+
         Casti castileMele = new Casti("Samsung", "negru", "nou", "2 ani", 299.99f, 12, "Office", "Bluethoot", true, 10);
         castileMele.AfisarePret();
         castileMele.AfisareStoc();
+
+        // initierea unui nou obiect de tip casti
+        // prin apel constructorul de copiere
 
         Casti castileMele2 = new Casti(castileMele);
         castileMele2.AfisarePret();
         castileMele2.AfisareStoc();
 
+        // folosirea metodelor get si set.
+
         castileMele.setPutere(15);
         System.out.println("Puterea castilor este: " + castileMele.getPutere());
+
+        // folosirea metodei toString()
 
         System.out.println(castileMele2);
         System.out.println("Castile mele sunt: " + castileMele.toString());
