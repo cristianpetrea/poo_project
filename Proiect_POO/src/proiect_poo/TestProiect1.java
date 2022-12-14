@@ -2,23 +2,28 @@ package proiect_poo;
 
 public class TestProiect1 {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        Gadget ProduseElectronica = new Gadget("Samsung", "rosu", "nou", "4ani", 2999, 12);
-        ProduseElectronica.AfisarePret();
-        ProduseElectronica.AfisareStoc();
-        System.out.println(ProduseElectronica.toString());
-        Gadget produs1 = new Gadget();
-        System.out.println(produs1.toString());
-        MiniCamere model1, model2;
-        model1 = new MiniCamere();
-        model2 = new MiniCamere("Nokia", "gri", "utilizat", "2ani ", 2699, 9, 64, 25, 1080, 3000, "Android");
-        System.out.println(model1.toString());
-        System.out.println(model2.toString());
-        System.out.println(model2.getMemorie());
-        model1.setMemorie(12);
-        System.out.println(model1.getMemorie());
-        MiniCamere model3;
-        model3 = model2;
-        System.out.println(model3.toString());
+        System.out.println("Testare Proiect");
+
+        // instantierea un obiect de tip Gadget
+        // prin apel constructor implicit ( fara parametrii)
+
+        Gadget gadegtMeu = new Gadget();
+        gadegtMeu.AfisarePret();
+        gadegtMeu.AfisareStoc();
+
+        Casti castileMele = new Casti("Samsung", "negru", "nou", "2 ani", 299.99f, 12, "Office", "Bluethoot", true, 10);
+        castileMele.AfisarePret();
+        castileMele.AfisareStoc();
+
+        Casti castileMele2 = new Casti(castileMele);
+        castileMele2.AfisarePret();
+        castileMele2.AfisareStoc();
+
+        castileMele.setPutere(15);
+        System.out.println("Puterea castilor este: " + castileMele.getPutere());
+
+        System.out.println(castileMele2);
+        System.out.println("Castile mele sunt: " + castileMele.toString());
+
     }
 }
