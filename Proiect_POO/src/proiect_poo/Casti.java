@@ -1,7 +1,7 @@
 
 package proiect_poo;
 
-public class Casti extends Gadget{
+public class Casti extends Gadget {
     private String tip;
     private String functii;
     private boolean microfon;
@@ -12,12 +12,12 @@ public class Casti extends Gadget{
         tip = null;
         functii = null;
         microfon = false;
-        putere = 0;
+        putere = 100;
     }
 
     public Casti(String brand, float pret, String culoare, String stare, String garantie, int stoc, boolean microfon,
             int putere, String tip, String functii) {
-        super(brand,culoare,stare,garantie,pret,stoc);
+        super(brand, culoare, stare, garantie, pret, stoc);
         this.tip = tip;
         this.functii = functii;
         this.microfon = microfon;
