@@ -18,8 +18,8 @@ public class MiniCamere extends Gadget {
         SistemOperare=null;
         
     }
-    public MiniCamere(String brand,String culoare,String stare,String garantie, float pret,int stoc,int memorie, int greutate,int format_foto,int autonomie,String SistemOperare){
-        super(brand,culoare,stare,garantie,pret,stoc);
+    public MiniCamere(String brand,String culoare,String stare,int i, float pret,int stoc,int memorie, int greutate,int format_foto,int autonomie,String SistemOperare){
+        super(brand,culoare,stare,i,pret,stoc);
         this.memorie=memorie;
         this.greutate=greutate;
         this.format_foto=format_foto;
