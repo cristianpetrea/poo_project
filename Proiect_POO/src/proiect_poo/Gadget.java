@@ -11,19 +11,19 @@ public void AfisareStoc(){
     System.out.println("Stocul este");
 }
   
-    String brand, culoare, stare, garantie;
+    String brand, culoare, stare;
     float pret;
-    int stoc;
+    int stoc, garantie;
     public Gadget() {
         brand=null;
         culoare=null;
         stare=null;
-        garantie=null;
+        garantie=0;
         pret=0.0f;
         stoc=0;
         
     }
-    public Gadget(String brand,String culoare,String stare,String garantie, float pret, int stoc) {
+    public Gadget(String brand,String culoare,String stare,int garantie, float pret, int stoc) {
         this.brand=brand;
         this.culoare=culoare;
         this.stare=stare;
