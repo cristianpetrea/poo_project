@@ -2,8 +2,8 @@ package proiect_poo;
 
 public class TestProiect {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        Gadget ProduseElectronica =new Gadget("Samsung","rosu","nou","4ani",2999,12);
+       
+        Gadget ProduseElectronica =new Gadget("Samsung","rosu","nou",4,2999,12);
         ProduseElectronica.AfisarePret();
         ProduseElectronica.AfisareStoc();
         System.out.println(ProduseElectronica.toString());
@@ -11,7 +11,7 @@ public class TestProiect {
         System.out.println(produs1.toString());
         MiniCamere model1,model2;
         model1=new MiniCamere();
-        model2=new MiniCamere("Nokia","gri","utilizat","2ani ", 2699,9,64,25,1080,3000,"Android");
+        model2=new MiniCamere("Nokia","gri","utilizat",4, 2699,9,64,25,1080,3000,"Android");
         System.out.println(model1.toString());
         System.out.println(model2.toString());
         System.out.println(model2.getMemorie());

@@ -15,7 +15,7 @@ public class Casti extends Gadget {
         putere = 0;
     }
 
-    public Casti(String brand, float pret, String culoare, String stare, String garantie, int stoc, boolean microfon,
+    public Casti(String brand, float pret, String culoare, String stare, int garantie, int stoc, boolean microfon,
             int putere, String tip, String functii) {
         super(brand, culoare, stare, garantie, pret, stoc);
         this.tip = tip;
