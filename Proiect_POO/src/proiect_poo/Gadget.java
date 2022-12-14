@@ -34,15 +34,6 @@ public class Gadget implements Electronice {
         this.stoc = stoc;
     }
 
-    public Gadget(Gadget g) {
-        this.brand = g.brand;
-        this.culoare = g.culoare;
-        this.stare = g.stare;
-        this.garantie = g.garantie;
-        this.pret = g.pret;
-        this.stoc = g.stoc;
-    }
-
     @Override
     public String toString() {
         return "Brandul este " + brand + ", are culoarea " + culoare + ", starea produsului este " + stare
