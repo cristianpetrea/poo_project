@@ -16,6 +16,9 @@ public class Casti extends Gadget {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9302b8ce84d34627c7a4681ed67377269b8ad3f7
     public Casti(String brand, float pret, String culoare, String stare, int garantie, int stoc, boolean microfon,
             int putere, String tip, String functii) {
 =======
