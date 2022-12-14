@@ -12,7 +12,7 @@ public class Casti extends Gadget {
         tip = null;
         functii = null;
         microfon = false;
-        putere = 100;
+        putere = 10;
     }
 
     public Casti(String brand, float pret, String culoare, String stare, String garantie, int stoc, boolean microfon,
