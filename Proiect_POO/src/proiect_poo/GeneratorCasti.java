@@ -1,5 +1,7 @@
 package proiect_poo;
 
+import java.util.Random;
+
 public class GeneratorCasti {
     static private String[] brand = { "Samsung", "Apple", "Sony", "Huawei", "Xiaomi", "LG", "Lenovo", "Microsoft" };
 
@@ -24,16 +26,17 @@ public class GeneratorCasti {
     public static Casti[] genereazaNisteCasti(int n) {
         Casti[] listaCasti = new Casti[n];
         for (int i = 0; i < n; i++) {
-            String brandCasti = brand[(int) (Math.random() * brand.length)];
-            String culoareCasti = culoare[(int) (Math.random() * culoare.length)];
-            String stareCasti = stare[(int) (Math.random() * stare.length)];
-            int garantieCasti = garantie[(int) (Math.random() * garantie.length)];
-            float pretCasti = pret[(int) (Math.random() * pret.length)];
-            int stocCasti = stoc[(int) (Math.random() * stoc.length)];
-            String tipCasti = tip[(int) (Math.random() * tip.length)];
-            String functiiCasti = functii[(int) (Math.random() * functii.length)];
-            boolean microfonCasti = microfon[(int) (Math.random() * microfon.length)];
-            int putereCasti = putere[(int) (Math.random() * putere.length)];
+            String brandCasti = brand[new Random().nextInt(brand.length)];
+            String culoareCasti = culoare[new Random().nextInt(culoare.length)];
+            String stareCasti = stare[new Random().nextInt(stare.length)];
+            int garantieCasti = garantie[new Random().nextInt(garantie.length)];
+            float pretCasti = pret[new Random().nextInt(pret.length)];
+            int stocCasti = stoc[new Random().nextInt(stoc.length)];
+            String tipCasti = tip[new Random().nextInt(tip.length)];
+            String functiiCasti = functii[new Random().nextInt(functii.length)];
+            boolean microfonCasti = microfon[new Random().nextInt(microfon.length)];
+            int putereCasti = putere[new Random().nextInt(putere.length)];
+
             Casti casti = new Casti(brandCasti, culoareCasti, stareCasti, garantieCasti, pretCasti, stocCasti, tipCasti,
                     functiiCasti, microfonCasti, putereCasti);
             listaCasti[i] = casti;

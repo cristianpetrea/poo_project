@@ -15,9 +15,6 @@ public class Casti extends Gadget {
         putere = 0;
     }
 
-
-
-
     public Casti(String brand, String culoare, String stare, int garantie, float pret, int stoc, String tip,
             String functii, boolean microfon, int putere) {
 
@@ -70,7 +67,8 @@ public class Casti extends Gadget {
 
     @Override
     public String toString() {
-        return "Casti{" + "tip=" + tip + ", functii=" + functii + ", microfon=" + microfon + ", putere=" + putere + '}';
+        return super.toString() + " casti de {" + "tip=" + tip + ", functii=" + functii + ", microfon=" + microfon
+                + ", putere=" + putere + '}';
     }
 
     @Override
