@@ -32,17 +32,12 @@ public void AfisareStoc(){
         this.stoc=stoc;
     }
 
-
-@Override
-    public String toString() {
-        return "Brandul este "+brand+", are culoarea "+culoare+", starea produsului este "+stare+", are pretul de "+pret+" cu o garantie de "+garantie+" ani";
-    }
-    
    
+
+    @Override
+    public String toString() {
+        return "Brandul este " + brand + ", are culoarea " + culoare + ", starea produsului este " + stare
+                + ", are pretul de " + pret + " cu o garantie de " + garantie + " ani";
+    }
+
 }
-
-    
-
- 
-    
-
