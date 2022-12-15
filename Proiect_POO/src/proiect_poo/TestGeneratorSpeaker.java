@@ -1,6 +1,6 @@
 package proiect_poo;
 
-public class TestSpeaker {
+public class TestGeneratorSpeaker {
     public static void main(String[] args) {
         System.out.println("Testare Proiect");
 
@@ -15,7 +15,7 @@ public class TestSpeaker {
         // prin apel constructor cu parametrii
 
         Speaker speakerMele = new Speaker("Samsung", "negru", "nou", 2, 299.99f,
-                12, true, "IOS", true, 2600, 30);
+                12, true, false, true, 2600, 30);
         speakerMele.AfisarePret();
         speakerMele.AfisareStoc();
 
@@ -28,8 +28,8 @@ public class TestSpeaker {
 
         // folosirea metodelor get si set.
 
-        speakerMele.setchargingTime(30);
-        System.out.println("chargingTime speaker este: " + speakerMele.getPutere());
+        speakerMele.setChargingTime(30);
+        System.out.println("chargingTime speaker este: " + speakerMele.getChargingTime());
 
         // folosirea metodei toString()
 
@@ -47,7 +47,7 @@ public class TestSpeaker {
          */
         System.out.println("Lista speaker este: ");
         for (Speaker speaker : listaSpeaker) {
-            System.out.println(casti);
+            System.out.println(speaker);
         }
 
     }
