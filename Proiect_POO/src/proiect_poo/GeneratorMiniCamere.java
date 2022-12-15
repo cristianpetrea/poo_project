@@ -21,7 +21,7 @@ public class GeneratorMiniCamere {
             int format_foto = new Random().nextInt(1080);
             int autonomie = new Random().nextInt(600);
             int garantie = new Random().nextInt(5);
-            String culoare = stari[new Random().nextInt(culori.length)];
+            String culoare = culori[new Random().nextInt(culori.length)];
 			String stare = stari[new Random().nextInt(stari.length)];
             String SistemeOperare = Sisteme[new Random().nextInt(Sisteme.length)];
 			oCamera=new MiniCamere(brand, culoare, stare, garantie, pret, stoc, memorie, greutate, format_foto, autonomie, SistemeOperare);
@@ -42,7 +42,7 @@ public class GeneratorMiniCamere {
             int format_foto = new Random().nextInt(1080);
             int autonomie = new Random().nextInt(600);
             int garantie = new Random().nextInt(5);
-            String culoare = stari[new Random().nextInt(culori.length)];
+            String culoare = culori[new Random().nextInt(culori.length)];
 			String stare = stari[new Random().nextInt(stari.length)];
             String SistemeOperare = Sisteme[new Random().nextInt(Sisteme.length)];
 			MiniCamere oCamera=new MiniCamere(brand, culoare, stare, garantie, pret,stoc, memorie, greutate, format_foto, autonomie, SistemeOperare);
