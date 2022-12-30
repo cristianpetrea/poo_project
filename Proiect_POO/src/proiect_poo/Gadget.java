@@ -36,8 +36,8 @@ public void AfisareStoc(){
 
     @Override
     public String toString() {
-        return "Brandul este " + brand + ", are culoarea " + culoare + ", starea produsului este " + stare
-                + ", are pretul de " + pret + " cu o garantie de " + garantie + " ani";
+        return "Brandul               " + brand + "\n"+"culoarea              " + culoare + "\n"+"starea produsului     " + stare+"\n"
+                + "pretul de             " + pret + " lei \n" + "garantie de           " + garantie + " ani \n";
     }
 
 }

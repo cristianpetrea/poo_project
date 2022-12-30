@@ -30,27 +30,7 @@ public class GeneratorMiniCamere {
 		return listaCamere;
 	}
 	
-	
-	// metoda statica, poate fi apelata fara a instantia clasa
-	public static MiniCamere[] genereazaNisteCamere(int n) {
-		MiniCamere[] listaCamere= new MiniCamere[n];
-		for (int i=0;i<n;i++) {
-			int greutate = new Random().nextInt(50);
-            int pret = new Random().nextInt(1000);
-            int stoc = new Random().nextInt(50);
-            int memorie = new Random().nextInt(50);
-            int format_foto = new Random().nextInt(1080);
-            int autonomie = new Random().nextInt(600);
-            int garantie = new Random().nextInt(5);
-            String culoare = stari[new Random().nextInt(culori.length)];
-			String stare = stari[new Random().nextInt(stari.length)];
-            String SistemeOperare = Sisteme[new Random().nextInt(Sisteme.length)];
-			MiniCamere oCamera=new MiniCamere(brand, culoare, stare, garantie, pret,stoc, memorie, greutate, format_foto, autonomie, SistemeOperare);
-			listaCamere[i]= oCamera;
-		}
-		return listaCamere;
-	}
-	
+
 	
 	
 

@@ -1,6 +1,7 @@
 package proiect_poo;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class TestGenerator {
     public static void main(String[] args) {
@@ -51,14 +52,23 @@ public class TestGenerator {
 			System.out.println(listaCamere.get(i));
 
 
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.print("Introduceti limita de greutate: ");
+			int greutate = scanner.nextInt();
 
-		 ArrayList<MiniCamere> listaFiltrataCamereG = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, 50);
-        System.out.println("Lista de camere filtrata dupa greutate:");
-        System.out.println(listaFiltrataCamereG);
-        
-        ArrayList<MiniCamere> listaFiltrataCamereS = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
-        System.out.println("Lista de camere filtrata dupa Sistemul de Operare:");
-        System.out.println(listaFiltrataCamereS);
+			 ArrayList<MiniCamere> listaFiltrataCamereG = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, greutate);
+			System.out.println("Lista de camere filtrata dupa greutate: \n");
+			System.out.println(listaFiltrataCamereG+"\n");
+		}
+
+
+		
+
+		ArrayList<MiniCamere> listaFiltrataCamereS = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
+        System.out.println("Lista de camere filtrata dupa Sistemul de Operare: \n");
+        System.out.println(listaFiltrataCamereS+"\n");
+		
+		
 
 		
 	}
