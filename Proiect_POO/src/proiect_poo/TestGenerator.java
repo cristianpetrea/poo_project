@@ -23,7 +23,7 @@ public class TestGenerator {
 		System.out.println(" parcuregere cu for each");
 		for(MiniCamere MiniCamere:chestii)
 			System.out.println(MiniCamere);
-		// Iterator - de testat cum se foloseste 	
+		 	
 		
 		
 		ArrayList<MiniCamere> listaGenericaDeObiecte = new ArrayList<MiniCamere>();
@@ -31,7 +31,7 @@ public class TestGenerator {
 		
 		
 		
-		// este nevoie de cast la Copac ptr ca lista furnizeaza Object
+		
 		MiniCamere altaCamera = (MiniCamere) listaGenericaDeObiecte.get(0);
 		System.out.println(altaCamera);
 		
@@ -49,19 +49,23 @@ public class TestGenerator {
 		System.out.println("folosim for old style pe lista");
 		for(int i=0;i<listaCamere.size();i++)
 			System.out.println(listaCamere.get(i));
+
+
+
+		 ArrayList<MiniCamere> listaFiltrataMasiniP = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, 50);
+        System.out.println("Lista de masini filtrata dupa pret:");
+        System.out.println(listaFiltrataMasiniP);
+        
+        ArrayList<MiniCamere> listaFiltrataMasiniM = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
+        System.out.println("Lista de masini filtrata dupa marca:");
+        System.out.println(listaFiltrataMasiniM);
+
 		
-		
-		MiniCamere[] vectorDeCamere = GeneratorMiniCamere.genereazaNisteCamere(10);
-		System.out.println("vector de camere :");
-		System.out.println(vectorDeCamere);
-		
-		System.out.println("folosim for each pe vector");
-		for(MiniCamere oCamera:vectorDeCamere)
-			System.out.println(oCamera);
-		
-		System.out.println("folosim for old style pe vector");
-		for(int i=0;i<vectorDeCamere.length;i++)
-			System.out.println(vectorDeCamere[i]);
 	}
 
+
+
+
+	
+	
 }
