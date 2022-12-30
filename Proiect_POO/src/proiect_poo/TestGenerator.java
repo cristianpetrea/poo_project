@@ -52,13 +52,13 @@ public class TestGenerator {
 
 
 
-		 ArrayList<MiniCamere> listaFiltrataMasiniP = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, 50);
-        System.out.println("Lista de masini filtrata dupa pret:");
-        System.out.println(listaFiltrataMasiniP);
+		 ArrayList<MiniCamere> listaFiltrataCamereG = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, 50);
+        System.out.println("Lista de masini filtrata dupa greutate:");
+        System.out.println(listaFiltrataCamereG);
         
-        ArrayList<MiniCamere> listaFiltrataMasiniM = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
-        System.out.println("Lista de masini filtrata dupa marca:");
-        System.out.println(listaFiltrataMasiniM);
+        ArrayList<MiniCamere> listaFiltrataCamereS = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
+        System.out.println("Lista de masini filtrata dupa Sistemul de Operare:");
+        System.out.println(listaFiltrataCamereS);
 
 		
 	}
