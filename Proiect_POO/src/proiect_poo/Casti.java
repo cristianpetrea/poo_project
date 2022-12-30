@@ -68,7 +68,7 @@ public class Casti extends Gadget {
     @Override
     public String toString() {
         return super.toString() + " casti de {" + "tip=" + tip + ", functii=" + functii + ", microfon=" + microfon
-                + ", putere=" + putere + '}';
+                + ", putere=" + putere + '}' + "\n";
     }
 
     @Override

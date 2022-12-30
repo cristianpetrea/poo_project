@@ -1,6 +1,7 @@
 package proiect_poo;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class TestCasti {
     public static void main(String[] args) {
@@ -53,16 +54,24 @@ public class TestCasti {
         }
 
         // folosirea metodei filtreazaDupaPutere
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Introduceti puterea: ");
+            int puterea = scanner.nextInt();
 
-        ArrayList<Casti> listaCastiFiltrata = CastiFilter.filtreazaDupaPutere(listaCasti, 10);
-        System.out.println("Lista castilor filtrata este: ");
-        System.out.println(listaCastiFiltrata);
+            ArrayList<Casti> listaCastiFiltrata = CastiFilter.filtreazaDupaPutere(listaCasti, puterea);
+            System.out.println("Lista castilor filtrata este: ");
+            System.out.println(listaCastiFiltrata);
 
-        // folosirea metodei filtreazaDupaTip
+            // folosirea metodei filtreazaDupaTip
+            System.out.print("Introduceti tipul: ");
+            try (Scanner scanner2 = new Scanner(System.in)) {
+                String tip = scanner2.nextLine().toString();
 
-        ArrayList<Casti> listaCastiFiltrata2 = CastiFilter.filtreazaDupaTip(listaCasti, "Office");
-        System.out.println("Lista castilor filtrata este: ");
-        System.out.println(listaCastiFiltrata2);
+                ArrayList<Casti> listaCastiFiltrata2 = CastiFilter.filtreazaDupaTip(listaCasti, tip);
+                System.out.println("Lista castilor filtrata este: ");
+                System.out.println(listaCastiFiltrata2);
+            }
 
+        }
     }
 }
