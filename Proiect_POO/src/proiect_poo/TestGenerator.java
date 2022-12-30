@@ -53,11 +53,11 @@ public class TestGenerator {
 
 
 		 ArrayList<MiniCamere> listaFiltrataCamereG = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, 50);
-        System.out.println("Lista de masini filtrata dupa greutate:");
+        System.out.println("Lista de camere filtrata dupa greutate:");
         System.out.println(listaFiltrataCamereG);
         
         ArrayList<MiniCamere> listaFiltrataCamereS = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
-        System.out.println("Lista de masini filtrata dupa Sistemul de Operare:");
+        System.out.println("Lista de camere filtrata dupa Sistemul de Operare:");
         System.out.println(listaFiltrataCamereS);
 
 		
