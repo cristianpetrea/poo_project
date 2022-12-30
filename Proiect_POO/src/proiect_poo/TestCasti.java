@@ -1,5 +1,7 @@
 package proiect_poo;
 
+import java.util.ArrayList;
+
 public class TestCasti {
     public static void main(String[] args) {
         System.out.println("Testare Proiect");
@@ -49,6 +51,18 @@ public class TestCasti {
         for (Casti casti : listaCasti) {
             System.out.println(casti);
         }
+
+        // folosirea metodei filtreazaDupaPutere
+
+        ArrayList<Casti> listaCastiFiltrata = CastiFilter.filtreazaDupaPutere(listaCasti, 10);
+        System.out.println("Lista castilor filtrata este: ");
+        System.out.println(listaCastiFiltrata);
+
+        // folosirea metodei filtreazaDupaTip
+
+        ArrayList<Casti> listaCastiFiltrata2 = CastiFilter.filtreazaDupaTip(listaCasti, "Office");
+        System.out.println("Lista castilor filtrata este: ");
+        System.out.println(listaCastiFiltrata2);
 
     }
 }
