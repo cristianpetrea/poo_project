@@ -135,7 +135,7 @@ public class TestInterfata {
 		frame.add(genereazaBT2);
 		frame.add(saveButton);
 		frame.setSize(900, 900);
-		frame.setTitle("MiniCamere");
+		frame.setTitle("Interfata Grafica");
 		frame.setLayout(null);
 		frame.setVisible(true);
 		frame.setResizable(false);
