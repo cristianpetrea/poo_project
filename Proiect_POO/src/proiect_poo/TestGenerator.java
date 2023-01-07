@@ -59,6 +59,7 @@ public class TestGenerator {
 			 ArrayList<MiniCamere> listaFiltrataCamereG = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, greutate);
 			System.out.println("Lista de camere filtrata dupa greutate: \n");
 			System.out.println(listaFiltrataCamereG+"\n");
+			
 		}
 
 
@@ -68,8 +69,8 @@ public class TestGenerator {
         System.out.println("Lista de camere filtrata dupa Sistemul de Operare: \n");
         System.out.println(listaFiltrataCamereS+"\n");
 		
-		
 
+		
 		
 	}
 
