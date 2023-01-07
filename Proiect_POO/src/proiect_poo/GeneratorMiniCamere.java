@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GeneratorMiniCamere {
-    public static String brand="Sony";
+    public static String[] branduri=new String[]{"Sony","Samsung","Nokia","myria"};
 	
 	static private String[] culori = new String[]{"rosu","alb","negru","galben","mov","albastru"};
     static private String[] stari = new String[]{"nou","uzat"};
@@ -21,6 +21,7 @@ public class GeneratorMiniCamere {
             int format_foto = new Random().nextInt(1080);
             int autonomie = new Random().nextInt(600);
             int garantie = new Random().nextInt(5);
+			String brand = branduri[new Random().nextInt(branduri.length)];
             String culoare = culori[new Random().nextInt(culori.length)];
 			String stare = stari[new Random().nextInt(stari.length)];
             String SistemeOperare = Sisteme[new Random().nextInt(Sisteme.length)];
