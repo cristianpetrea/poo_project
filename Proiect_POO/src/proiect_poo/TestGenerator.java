@@ -1,6 +1,7 @@
 package proiect_poo;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class TestGenerator {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class TestGenerator {
 		System.out.println(" parcuregere cu for each");
 		for(MiniCamere MiniCamere:chestii)
 			System.out.println(MiniCamere);
-		// Iterator - de testat cum se foloseste 	
+		 	
 		
 		
 		ArrayList<MiniCamere> listaGenericaDeObiecte = new ArrayList<MiniCamere>();
@@ -31,7 +32,7 @@ public class TestGenerator {
 		
 		
 		
-		// este nevoie de cast la Copac ptr ca lista furnizeaza Object
+		
 		MiniCamere altaCamera = (MiniCamere) listaGenericaDeObiecte.get(0);
 		System.out.println(altaCamera);
 		
@@ -49,19 +50,33 @@ public class TestGenerator {
 		System.out.println("folosim for old style pe lista");
 		for(int i=0;i<listaCamere.size();i++)
 			System.out.println(listaCamere.get(i));
+
+
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.print("Introduceti limita de greutate: ");
+			int greutate = scanner.nextInt();
+
+			 ArrayList<MiniCamere> listaFiltrataCamereG = SortareMiniCamere.filtreazaDupaGreutate(listaCamere, greutate);
+			System.out.println("Lista de camere filtrata dupa greutate: \n");
+			System.out.println(listaFiltrataCamereG+"\n");
+			
+		}
+
+
+		
+
+		ArrayList<MiniCamere> listaMiniCamere = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
+        System.out.println("Lista de camere filtrata dupa Sistemul de Operare: \n");
+        System.out.println(listaMiniCamere+"\n");
+		
+
 		
 		
-		MiniCamere[] vectorDeCamere = GeneratorMiniCamere.genereazaNisteCamere(10);
-		System.out.println("vector de camere :");
-		System.out.println(vectorDeCamere);
-		
-		System.out.println("folosim for each pe vector");
-		for(MiniCamere oCamera:vectorDeCamere)
-			System.out.println(oCamera);
-		
-		System.out.println("folosim for old style pe vector");
-		for(int i=0;i<vectorDeCamere.length;i++)
-			System.out.println(vectorDeCamere[i]);
 	}
 
+
+
+
+	
+	
 }

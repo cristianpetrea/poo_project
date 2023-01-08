@@ -71,6 +71,6 @@ public class MiniCamere extends Gadget {
     }
    
     public String toString() {
-        return super.toString()+".Memoria de "+memorie+" gb,  cu greutatea de "+greutate+" g. Are formatul foto de "+format_foto+"p si o autonomie de "+autonomie+" minute. Sistem de operare folosit este "+SistemOperare+" . ";
+        return super.toString()+"Memoria               "+memorie+" gb \n"+"greutate              "+greutate+"g \n"+"formatul foto de      "+format_foto+"p \n"+"autonomie de          "+autonomie+" minute \n"+"Sistem de operare     "+SistemOperare+"\n";
     }
 }
