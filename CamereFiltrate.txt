@@ -1,0 +1,81 @@
+ [Brandul               Samsung
+culoarea              alb
+starea produsului     uzat
+pretul de             825.0 lei 
+garantie de           4 ani 
+Memoria               32 gb 
+greutate              6g 
+formatul foto de      216p 
+autonomie de          129 minute 
+Sistem de operare     IOS
+, Brandul               Samsung
+culoarea              alb
+starea produsului     nou
+pretul de             139.0 lei 
+garantie de           0 ani 
+Memoria               46 gb 
+greutate              5g 
+formatul foto de      898p 
+autonomie de          257 minute 
+Sistem de operare     IOS
+, Brandul               Nokia
+culoarea              negru
+starea produsului     nou
+pretul de             615.0 lei 
+garantie de           3 ani 
+Memoria               3 gb 
+greutate              17g 
+formatul foto de      215p 
+autonomie de          590 minute 
+Sistem de operare     IOS
+, Brandul               myria
+culoarea              rosu
+starea produsului     uzat
+pretul de             967.0 lei 
+garantie de           0 ani 
+Memoria               0 gb 
+greutate              20g 
+formatul foto de      699p 
+autonomie de          39 minute 
+Sistem de operare     IOS
+, Brandul               myria
+culoarea              rosu
+starea produsului     nou
+pretul de             399.0 lei 
+garantie de           3 ani 
+Memoria               6 gb 
+greutate              11g 
+formatul foto de      477p 
+autonomie de          556 minute 
+Sistem de operare     IOS
+, Brandul               Samsung
+culoarea              negru
+starea produsului     nou
+pretul de             575.0 lei 
+garantie de           1 ani 
+Memoria               6 gb 
+greutate              29g 
+formatul foto de      849p 
+autonomie de          507 minute 
+Sistem de operare     IOS
+, Brandul               Nokia
+culoarea              negru
+starea produsului     uzat
+pretul de             763.0 lei 
+garantie de           1 ani 
+Memoria               37 gb 
+greutate              11g 
+formatul foto de      280p 
+autonomie de          167 minute 
+Sistem de operare     IOS
+, Brandul               Samsung
+culoarea              galben
+starea produsului     nou
+pretul de             566.0 lei 
+garantie de           0 ani 
+Memoria               30 gb 
+greutate              29g 
+formatul foto de      595p 
+autonomie de          463 minute 
+Sistem de operare     IOS
+]

@@ -65,9 +65,9 @@ public class TestGenerator {
 
 		
 
-		ArrayList<MiniCamere> listaFiltrataCamereS = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
+		ArrayList<MiniCamere> listaMiniCamere = SortareMiniCamere.filtreazaDupaSistemedeOperare(listaCamere, "Android");
         System.out.println("Lista de camere filtrata dupa Sistemul de Operare: \n");
-        System.out.println(listaFiltrataCamereS+"\n");
+        System.out.println(listaMiniCamere+"\n");
 		
 
 		

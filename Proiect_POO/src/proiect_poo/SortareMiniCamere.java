@@ -3,6 +3,7 @@ package proiect_poo;
 import java.util.ArrayList;
 
 
+
 public class SortareMiniCamere {
     public static ArrayList<MiniCamere> filtreazaDupaGreutate(ArrayList<MiniCamere> listainitialaCamere, int greutate) {
 		ArrayList<MiniCamere> listaMiniCamere = new ArrayList<MiniCamere>();
@@ -12,12 +13,15 @@ public class SortareMiniCamere {
 		return listaMiniCamere;
 	}
 
-	public static ArrayList<MiniCamere> filtreazaDupaSistemedeOperare(ArrayList<MiniCamere> listainitialaCamere, String SistemOperare) {
-		ArrayList<MiniCamere> listaMiniCamere = new ArrayList<>();
-		for(MiniCamere minicamere: listainitialaCamere)
+
+	
+	public static ArrayList<MiniCamere> filtreazaDupaSistemedeOperare(ArrayList<MiniCamere> listaCamere, String SistemOperare) {
+		ArrayList<MiniCamere> listaMiniCamere = new ArrayList<MiniCamere>();
+		for(MiniCamere minicamere:listaCamere)
 			if (minicamere.getSistemeOperare().equals(SistemOperare) )
             listaMiniCamere.add(minicamere);		
 		return listaMiniCamere;
+		
 	}
 
 }
